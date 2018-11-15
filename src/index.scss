@@ -1,0 +1,294 @@
+html,
+body,
+#root {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+}
+
+.login {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  background-image: url("./background.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-size: cover;
+}
+
+.home {
+  display: block;
+  align-items: center;
+  position: absolute;
+  top: 20vh;
+
+  text-align: center;
+  font-family: 'Acme', sans-serif;
+  font-size: 20px;
+}
+
+.welcome {
+  padding: 0px;
+  margin-bottom: 10px;
+  height: 60px;
+  width: 100vw;
+
+  text-align: center;
+  font-family: 'Bungee Shade', cursive;
+  font-size: 40px;
+
+  background-color: #27575C;
+  border-top: 0.5vh solid darkgray;
+  border-bottom: 0.5vh solid darkgray;
+}
+
+.login-user {
+  position: relative;
+  height: 35px;
+  width: 200px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-left: 5px;
+
+  font-family: 'Acme', sans-serif;
+  font-size: 20px;
+}
+
+.chat {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-image: url("./background.jpg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-color: hsla(0,0%,80%,0.70);
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+.line {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding: 0px 10px;
+  margin: 0px;
+}
+
+.top {
+  border-bottom: 0.5vh solid darkgray;
+  background-color: #27575C;
+  height: 70px;
+}
+
+.chat-title {
+  padding: 0px;
+  margin: 0px;
+  height: 45px;
+  width: calc(100vw - 100px);
+
+  text-align: center;
+  font-family: 'Bungee Shade', cursive;
+  font-size: 35px;
+}
+
+.chat-title:hover {
+  font-size: 36px;
+}
+
+.history {
+  display: block;
+  list-style: none;
+  padding: 0px;
+  width: 130px;
+  line-height: 15px;
+  text-align: left;
+  color: black;
+}
+
+.history li {
+  margin: 0px;
+  padding: 0px 7px;
+  width: fit-content;
+  text-decoration-line: underline;
+  font-size: 15px;
+  font-weight: lighter;
+  font-family: 'Titillium Web', sans-serif;
+  cursor: pointer;
+  color: black;
+}
+
+.signout {
+  color: black;
+  line-height: 0px;
+}
+
+.avatar {
+  margin: 3px;
+  height: 40px;
+  width: 40px;  
+  background-color: rgb(21, 21, 22);
+  border-radius: 50%;
+}
+
+.chat-list {
+  position: static;
+  width: 100vw;
+  display: block;
+  list-style: none;
+  padding: 2px;
+}
+
+.user {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 0.85em;
+  color: green;
+  line-height: 0.5;
+}
+
+.bubble {
+  margin: 3px;
+  padding: 6px;
+  border: none;
+  border-radius: 10px;
+  height: fit-content;
+  min-height: 25px;
+  width: fit-content;
+  max-width: 500px;
+  word-wrap: break-word;
+}
+
+.bubble:hover {
+  padding: 5px;
+  box-shadow: 0 5px 5px 0 lightgray, 0 5px 5px 0 lightgray;
+}
+
+.input {
+  background-color: #E4ECED;
+  float: left;
+  clear: left;
+  text-align: left;
+}
+
+.output {
+  background-color: #87A6A9;
+  float: right;
+  clear: right;
+  text-align: right;
+}
+
+.bottom {
+  padding: 0px;
+  margin: 0px;
+  height: 50px;
+  width: 100vw;
+  background-color: #27575C;
+  border-top: 1px solid darkgray;
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+
+  position: absolute;
+  bottom: 0; 
+}
+
+.send {
+  position: absolute;
+  right: 0.5vw;
+  padding-left: 9px;
+  height: 30px;
+  width: 30px;
+  background-color: #bbb;
+  border-radius: 50%;
+  border: 1px none;
+
+  align-items: center;
+}
+
+.send:hover {
+  border: 0.1vw solid lightgray;
+}
+
+.triangle-up {
+  width: 0;
+  height: 0;
+  border-bottom: 7px solid black;
+  border-right: 15px solid transparent;
+  margin-bottom: 1px;
+}
+
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-top: 7px solid black;
+  border-right: 15px solid transparent;
+  margin-top: 1px;
+}
+
+.my-username {
+  height: 30px;
+  width: 90px;
+  border: 0px;
+  background-color: grey;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: lighter;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.msg {
+  height: 30px;
+  width: calc(100% - 150px);
+  border: 0px;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+
+.chat-box {
+  position: static;
+  width: 100vw;
+  height: calc(100vh - 120px);
+  border-bottom: 1px solid lightgray;
+  margin: 0px;
+  padding-bottom: 20px;
+  display: flex;
+  overflow-y: scroll;
+}
+
+.history .avatar {
+  margin: 0px;
+  height: 45px;
+  width: 45px; 
+}
+
+.bubble-wraper {
+  position: static;
+  clear: both;
+}
+
+
+
+
+
+
+
