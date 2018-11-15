@@ -27,7 +27,6 @@ class Chat extends React.Component {
       message: '',
       history: [],
       user: this.props.username,
-      num_of_msg: 0,
     };
 
     this.updateMsg = this.updateMsg.bind(this);
@@ -58,12 +57,10 @@ class Chat extends React.Component {
         message: '',
         history: this.state.history,
         user: this.state.user,
-        num_of_msg: this.state.num_of_msg + 1,
       });
       socket.emit("spotim/chat", {avatar:"",
                                   username: this.state.user,
-                                  text: message,
-                                  key: this.state.num_of_msg});
+                                  text: message});
     }
   }
 

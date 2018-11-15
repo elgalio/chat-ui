@@ -8,13 +8,13 @@ class ChatBox extends React.Component {
   // maps the messages arrat to Bubble components
   makeBubbles(user, message) {
     if(message.username === user) {
-      return <li key={message.key} className='bubble-wraper'>
+      return <li className='bubble-wraper'>
                 <OutputBubble
                   msg={message.text} />
               </li>;
     }
     else {
-      return <li key={message.key} className='bubble-wraper'>
+      return <li className='bubble-wraper'>
                 <InputBubble
                   user={message.username}
                   msg={message.text} />
